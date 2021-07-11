@@ -1,0 +1,67 @@
+@font-face{
+    src: url('Nunito/Nunito-Regular.ttf');
+    font-family: regular;
+}
+@font-face{
+    src: url('Vollkorn_SC/VollkornSC-SemiBold.ttf');
+    font-family: header;
+}
+
+body{
+    background-color: #F2F6FF;
+    font-family: regular;
+}
+.container{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 95vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.btns{
+    margin-top: 20px;
+}
+h1{
+    font-family: header;
+}
+.btns button{
+padding: 10px 40px;
+border: none;
+outline: none;
+border-radius: 15px;
+color: #f7f7f7;
+
+}
+.btns .submit{
+    background-color: #0536ff;
+}
+.btns .reset{
+    background-color: #a1b3d2;
+}
+#grade{
+    margin: 75px 0 10px 0;
+    display: none;
+}
+.row{
+    width: 30%;
+    background-color: #FFFFFF;
+    padding: 50px;
+}
+input{
+    border: none;
+    background-color: #f3f3f4;
+    font-size: 12px;
+    width: 100%;
+    outline: none;
+    padding: 15px 10px;
+    border-radius: 50px;
+}
+input:focus{
+    outline: none;
+}
