@@ -27,15 +27,16 @@
                 <form>
                     <p id="grade"></p>
                     <input type="text" id="score">
-                    <div class="btns">
-                        <button type="button" class="submit" onclick="grade()">Get Grade</button>
-                        <button class="reset" onclick="reset()">Clear</button>
-                    </div>
+                    
                     
                 </form>
+                <div class="btns">
+                    <button onclick="getGrades()" class="submit">Get Grade</button>
+                    <button class="reset" onclick="clearScreen(event)">Clear</button>
+                </div>
             </div>
         </div>
         
-        <script src="script.js" async defer></script>
+        <script src="script.js"></script>
     </body>
 </html>

@@ -1,10 +1,20 @@
 var text = ""
    var gradeEle=  document.getElementById("grade")
    gradeEle.innerHTML= text
-function grade(){
+
+function clearScreen(e){
+    e.preventDefault()
+    document.getElementById("score").value ="";
+gradeEle.style.display= "none"
+   
+}
+
+function getGrades() {
     var score = document.getElementById("score").value
-    
-    if(score >= 101){
+    if(isNaN(score) || score == ""){
+        text="Please input a valid score between 0-100 "
+    }
+    else if(score >= 101){
         text = "Invalid Score! Please input a valid score between 0-100"
     }
     else if(score >= 80){
@@ -30,10 +40,5 @@ function grade(){
     
     gradeEle.innerHTML= text;
     gradeEle.style.display= "block"
-}
-function reset(){
-    document.getElementById("score").value ="";
-    gradeEle.innerHTML ="";
-    gradeEle.style.display="none"
-}
+  }
 
