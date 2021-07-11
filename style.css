@@ -65,3 +65,13 @@ input{
 input:focus{
     outline: none;
 }
+@media screen and (max-width: 992px){
+    .row{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 533px){
+    .btns button{
+        margin-bottom: 10px;
+    }
+}
